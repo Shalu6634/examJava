@@ -1,19 +1,34 @@
+
 import java.util.Scanner;
 
-public class AccendingOrder {
+public class AscendingOrder {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size: ");
+        int n = scanner.nextInt();
+        int[] array = new int[n];
 
-    public static void main(String args[]) {
-        //WAP TO SORT ARRAY IN ASCENDING(LOW TO HIGH) ORDER IN JAVA.
-        int[] array = {9, 10, 5, 6, 78};
-        int i;
-
-        for (i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-
-
-            }
-
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            array[i] = scanner.nextInt();
         }
-
+        System.out.println(" before : ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = 0; i < n; i++) {
+            for(int j = 0; j<n-i-1; j++){
+                if(array[j]>array[j+1])
+                {
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
+        System.out.println(" After sort: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
