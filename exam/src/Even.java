@@ -13,9 +13,20 @@ public class Even {
         {
             for(int j=i+1; i<=size; i++)
             {
-                x = i+j;
+
+                if(i%2==0)
+                {
+                    x = i+j;
+                }
+
             }
         }
         System.out.println("Sum Is:" + x);
     }
 }
+
+
+
+
+
+
