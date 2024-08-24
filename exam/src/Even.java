@@ -5,13 +5,13 @@ public class Even {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter N Number :");
-        int value = scanner.nextInt();
+        int size = scanner.nextInt();
 
 
         int x=0;
-        for(int i=0; i<=value; i++)
+        for(int i=0; i<=size; i++)
         {
-            for(int j=i+1; i<=value; i++)
+            for(int j=i+1; i<=size; i++)
             {
                 x = i+j;
             }
