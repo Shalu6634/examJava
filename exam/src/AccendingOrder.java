@@ -12,10 +12,7 @@ public class AscendingOrder {
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
         }
-        System.out.println(" before : ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+       
         for (int i = 0; i < n; i++) {
             for(int j = 0; j<n-i-1; j++){
                 if(array[j]>array[j+1])
@@ -26,7 +23,7 @@ public class AscendingOrder {
                 }
             }
         }
-        System.out.println(" After sort: ");
+        System.out.println(" After: ");
         for (int i = 0; i < n; i++) {
             System.out.print(array[i] + " ");
         }
