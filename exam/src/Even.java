@@ -8,7 +8,8 @@ public class Even {
         int size = scanner.nextInt();
 
 
-        int x=0;
+          int i;
+        int sum=0;
         for(int i=0; i<=size; i++)
         {
             for(int j=i+1; i<=size; i++)
@@ -16,12 +17,12 @@ public class Even {
 
                 if(i%2==0)
                 {
-                    x = i+j;
+                    sum=sum+i;
                 }
 
             }
         }
-        System.out.println("Sum Is:" + x);
+        System.out.println("Sum is:" + sum);
     }
 }
 
