@@ -8,7 +8,8 @@ public class AscendingOrder {
         int n = scanner.nextInt();
         int[] array = new int[n];
 
-        System.out.println("Enter the elements: ");
+
+        System.out.println("Enter  elements: ");
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
         }
